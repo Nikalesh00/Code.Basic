@@ -7,7 +7,7 @@ int accountNumber;
 double balance;
 
 public:  //constructor
-BankAccount(int accNum,double initial balance) {
+BankAccount(int accNum,double initialBalance) {
 
 accountNumber=accNum;
 balance=initialBalance;
@@ -39,14 +39,14 @@ int main() {
 BankAccount savings(1001,500.00);
 
 savings.deposit(150.00); //Accessing the 
-balance through the method
+//balance through the method
 
 //Direct access to balance is 
-prevented by 'private'
+//prevented by 'private'
 //saving .balance=10000;// this would cause a compile error
 
 std::cout <<"Current Balance:$" <<
-saving.getBalance() <<std::endl;
+savings.getBalance() <<std::endl;
 return 0;
 }
 
